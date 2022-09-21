@@ -28,11 +28,11 @@ app.post("/upload" , (req, res) => {
 
 
     console.log(req.files)
-    // let sampleFile = req.files.file;
-    // sampleFile.mv("./public/image/"+ sampleFile.name, function(err) {
-    // });
+    let sampleFile = req.files.file;
+    sampleFile.mv("./public/image/"+ sampleFile.name, function(err) {
+    });
 
-    res.send("5555");
+    res.send(sampleFile.name);
 });
 
 
