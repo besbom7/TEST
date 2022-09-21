@@ -13,11 +13,11 @@ app.use(express.json());
 app.use(fileUpload());
 app.use(express.static('public'));
 //import
-const controller1 = require("./controller/controller1");
+// const controller1 = require("./controller/controller1");
 
 
 
-app.use("/BEST" , controller1);
+// app.use("/BEST" , controller1);
 
 app.get("/" , (req , res) => {
     let test = {best : 'test' , test : 'best'}
